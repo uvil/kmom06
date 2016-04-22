@@ -12,6 +12,9 @@ before_script:
     - wget https://scrutinizer-ci.com/ocular.phar
     - composer install
     - mysql -e 'create database phpmvc;'
+    - mysql -e 'use phpmvc;'
+    - mysql < user.sql
+    
 
 script:
     #- phpunit --bootstrap test/config.php test
