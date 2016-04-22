@@ -12,7 +12,7 @@ before_script:
     - wget https://scrutinizer-ci.com/ocular.phar
     - composer install
     - mysql -e 'create database phpmvc;'
-    - mysql phpmvc < user.sql
+    - mysql -e phpmvc < user.sql
     
 
 script:
