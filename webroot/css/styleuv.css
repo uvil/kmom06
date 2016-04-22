@@ -1,0 +1,118 @@
+/**
+ * General elements
+ */
+
+@import url(figure.css);
+
+@font-face {
+  font-family: 'open-sans';
+  src: url('open-sans/OpenSans-Light.ttf') format('truetype');   
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: 'open-sans',arial, sans-serif;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+  margin: 0 auto;
+}
+
+
+/**
+ * Layout for header
+ */
+#header {
+  padding: 40px 0;
+   background: #F2F3F4;
+   border-bottom: 1px solid #BEC0C2;
+   
+}
+
+#header div{
+  width: 560px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+.sitetitle {
+  position: absolute;
+  top: 80px;
+  left: 270px;
+  font-size: 3.5em;
+}
+
+.siteslogan {
+  position: absolute;
+  top: 143px;
+  left: 287px;
+  font-style: italic;
+  color: #666;
+}
+
+
+/**
+ * Layout for main
+ */
+#main {
+  min-height: 30em;
+  width: 90%;
+  margin:0 auto;
+  margin-bottom: 50px;
+}
+
+
+/**
+ * Layout for footer
+ */
+#footer {
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  min-height: 300px;
+  background: #242729;
+  color:#b9bdc1;
+  font-size: 0.9em;
+}
+
+.sitefooter {
+  color: #666;
+}
+
+
+/**
+ * For articles
+ */
+
+
+.article1 h1,
+.article1 h2 {
+  border-bottom: 1px solid #ccc;
+}
+
+.article1 h2{
+    font-size: 1.2em;
+}
+
+.byline {
+  border-top: 1px dashed #ccc;
+  margin-top:30px;
+  padding-top: 5px;
+  color: #666;
+}
+
+.byline p {
+  margin-top: 0;
+}
