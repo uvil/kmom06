@@ -4,10 +4,14 @@ php:
     - 5.5
     - 5.4
     - hhvm
+    
+services:
+  - mysql
 
 before_script:
     - wget https://scrutinizer-ci.com/ocular.phar
     - composer install
+    - mysql -e 'create database phpmvc;'
 
 script:
     #- phpunit --bootstrap test/config.php test
