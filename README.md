@@ -7,7 +7,7 @@ CUserBase
 
 A PHP-based package to use with ["AnaxMVC"](https://github.com/mosbth/Anax-MVC).
 
-I handles the user autorisation process.
+It handles the user autorisation process.
 
 
 HOW TO USE:

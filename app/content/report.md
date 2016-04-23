@@ -7,6 +7,59 @@ Kmom07/10: Projekt och examination
 Kmom06: Verktyg och CI
 -------------------------------------
 
+[Länk till Me-sida](http://www.student.bth.se/~urvi15/phpmvc/kmom06/webroot/)
+
+Här nedan hittar du svar på redovisningsfrågorna:
+
+**Var du bekant med några av dessa tekniker innan du började med kursmomentet?**
+
+Nej, jag hade inte använd några av verktygen PHPUnit, Travis eller Scrutinizer.
+Det var trevliga nya bekantskaper tycker jag. Jag fick grönt ljus på alla 
+[badgages](https://github.com/uvil/kmom06/blob/master/README.md).
+
+**Hur gick det att göra testfall med PHPUnit?**
+
+Efter att ha läst guiderna gick det enkelt att införa kod-tester. Inga större
+problem faktiskt. Tog bara en timme eller två. 
+[Så här ser de ut.](https://github.com/uvil/kmom06/blob/master/test/userbase/CUserBaseTest.php)
+
+**Hur gick det att integrera med Travis?**
+
+Detta var den intressantaste och roligaste delen av hela detta kunskapsmoment, tycker jag.
+Eftersom jag hade skrivit en liten modul för användarinloggning emot en databas så var
+jag tvungen att låta Travis skapa en egen databas för att kunna testköra mig kod.
+Efter att ha läst på lite i manualen kom jag fram till att man bara behövde lägga till 
+några rader i [.travis.yml-filen](https://github.com/uvil/kmom06/blob/master/.travis.yml):
+
+services:
+  - mysql
+
+before_script:
+    - mysql -e 'create database phpmvc;'
+    - mysql phpmvc < user.sql
+
+Eftersom jag redan hade gjort en dumpning av tabellen user var det ju bara att skapa
+databasen och sedan köra sql-scriptet. Fick prova några gånger för att få alla kommandon
+rätt men efter lite testande så fungerade det fint. Kul var det! Tog kanske en timme eller två.
+
+
+**Hur gick det att integrera med Scrutinizer?**
+
+Själva kod analysen gick på en kvart. Lite mer jobb för att få fram badgen för 
+code-coverage. Kanske en halvtimme eller så. Totalt kanske en timme. Det tycker jag
+är helt okej. Det var ju tydligt skrivet av Mikael hur man skulle göra. Om allt
+i livet vore så pass enkelt...
+
+
+**Hur känns det att jobba med dessa verktyg, krångligt, bekvämt, tryggt?** 
+
+Det kändes helt okej att jobba med verktygen. För att vara första gången
+gick det mycket bra faktiskt.
+
+**  Kan du tänka dig att fortsätta använda dem?**
+
+Ja, det kan jag absolut göra.
+
 Kmom05: Bygg ut ramverket
 -------------------------------------
 
