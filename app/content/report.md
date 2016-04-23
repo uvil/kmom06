@@ -14,8 +14,11 @@ Här nedan hittar du svar på redovisningsfrågorna:
 **Var du bekant med några av dessa tekniker innan du började med kursmomentet?**
 
 Nej, jag hade inte använd några av verktygen PHPUnit, Travis eller Scrutinizer.
-Det var trevliga nya bekantskaper tycker jag. Jag fick grönt ljus på alla 
-[badgages](https://github.com/uvil/kmom06/blob/master/README.md).
+Det var trevliga nya bekantskaper tycker jag. Jag fick grönt ljus på två 
+[badgages](https://github.com/uvil/kmom06/blob/master/README.md). Om jag skall få 
+grönt ljus på den tredje krävs att jag testar hela AnaxMVC. Det vill jag ogärna.
+Som du kan se [här](https://scrutinizer-ci.com/g/uvil/kmom06/inspections/fadf747c-1996-4afd-939d-748297846972/code-structure/class/Anax%5CUVC%5CCUserBase?expandCoverage=1) 
+har jag 100% code-coverage i cuserbase-modulen som jag har skrivit.
 
 **Hur gick det att göra testfall med PHPUnit?**
 
@@ -56,7 +59,7 @@ i livet vore så pass enkelt...
 Det kändes helt okej att jobba med verktygen. För att vara första gången
 gick det mycket bra faktiskt.
 
-**  Kan du tänka dig att fortsätta använda dem?**
+**Kan du tänka dig att fortsätta använda dem?**
 
 Ja, det kan jag absolut göra.
 
